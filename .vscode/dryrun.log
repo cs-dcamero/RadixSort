@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/c/Users/Douglas/Desktop/CSC 130/Camero_RadixSort'
+make: Leaving directory '/mnt/c/Users/Douglas/Desktop/CSC 130/Camero_RadixSort'
+ 
+makefile:10: *** missing separator (did you mean TAB instead of 8 spaces?).  Stop.
+
