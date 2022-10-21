@@ -153,7 +153,7 @@ class LinkedList
 
         else
         {
-            System.out.print(" "); //
+            System.out.print(" "); // test
         }
     }
 }
