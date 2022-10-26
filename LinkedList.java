@@ -23,7 +23,7 @@ class LinkedList
     {
         String about;
         about = "===================================================================\n";
-        about += "Author: Douglas Camero\nThis is my best attempt at creating a Node and LinkedList class :)\n";
+        about += "Author: Douglas Camero\nThis is my best attempt at implementing Radix Sort :)\n";
         about += "===================================================================\n";
         return about;
     }
@@ -40,6 +40,8 @@ class LinkedList
     */
     public void AddHead(String value)
     {      
+        //Entry item = new Entry(value);
+
         Node addNode = new Node(value); // create a new node
 
         if(head == null) // if true, we know that the LL is empty
