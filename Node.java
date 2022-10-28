@@ -1,6 +1,6 @@
 public class Node
 {
-    public String value;
+    public Entry value;
     public Node next;
 
     Node()
@@ -9,7 +9,7 @@ public class Node
         next = null;
     }
 
-    Node(String data)
+    Node(Entry data)
     {
         value = data;
         next = null;
@@ -27,7 +27,7 @@ public class Node
  * we either find the data we want or we do not find it. If we do not find
  * it after reaching the last Node, return false.
  */
-    public boolean Contains(String data)
+    public boolean Contains(Entry data)
     {
         if(data == value)
         {
@@ -54,12 +54,12 @@ public class Node
     {                
         if(next != null)
         {
-            System.out.print(value + " ");
+            System.out.println(value.key + " " + value.value);
             next.Print(); // this will take us to the next node to print
         }
         else
         {
-            System.out.print(value); // print when there is only 1 value in the list
+            System.out.println(value.key +" " + value.value); // print when there is only 1 value in the list
         }
     }
 }

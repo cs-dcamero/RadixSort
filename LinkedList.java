@@ -16,8 +16,8 @@
 
 class LinkedList
 {
-    private Node head;
-    private Node tail;
+    public Node head;
+    public Node tail;
 
     public String About()
     {
@@ -38,7 +38,7 @@ class LinkedList
     * add an element to the head of the LinkedList and
     * reassign the head to the newly created node
     */
-    public void AddHead(String value)
+    public void AddHead(Entry value)
     {      
         //Entry item = new Entry(value);
 
@@ -62,7 +62,7 @@ class LinkedList
      * add an element to the end of the LinkedList
      * and reassign the tail to the newly created node 
      */
-    void AddTail(String value)
+    void AddTail(Entry value)
     {
         Node addNode = new Node(value);
 
@@ -80,16 +80,16 @@ class LinkedList
 
     }
 
-    String RemoveHead()
+    Entry RemoveHead()
     {      
        if(head == null) // make sure the list is not alread empty
         {
-            return "";
+            return null;
         }
 
         // List was not empty so lets Remove the head
 
-        String result = head.value;
+        Entry result = head.value;
 
         head = head.next; // move the head to the next value in the list
 
@@ -101,11 +101,11 @@ class LinkedList
         return result;        
     }
 
-    String PeekHead()
+    Entry PeekHead()
     {
         if(IsEmpty()) // is empty to check if the list is empty
         {
-            return "";
+            return null;
         }
 
         else
@@ -122,12 +122,12 @@ class LinkedList
     {
         if(IsEmpty())
         {
-            return "";
+            return null;
         }
 
         else
         {
-            return tail.value;
+            return tail.value.key + " " + tail.value.value;
         }
     }
 
@@ -136,7 +136,7 @@ class LinkedList
         return head == null;
     }
 
-    public boolean Contains(String value)
+    public boolean Contains(Entry value)
     {
             if(IsEmpty()) // make sure list is not empty
             {
