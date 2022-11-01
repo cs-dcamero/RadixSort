@@ -272,7 +272,7 @@
 508,Massachusetts: Brockton
 758,Saint Lucia
 432,Texas: Midland
-902,"Nova Scotia, Prince Edward Island"
+902,Nova Scotia: Prince Edward Island
 316,Kansas: Wichita
 303,Colorado: Denver
 319,Iowa: Cedar Rapids
@@ -285,7 +285,7 @@
 715,Wisconsin: Eau Claire
 267,Pennsylvania: Philadelphia
 626,California: Pasadena
-867,"Northwest Territories, Nunavut, Yukon"
+867,Northwest Territories: Nunavut Yukon
 904,Florida: Jacksonville
 351,Massachusetts: Salem
 347,New York: New York City

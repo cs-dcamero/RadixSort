@@ -1,19 +1,3 @@
-/*=======================================================================
-
- Douglas Camero
- CSc 130
- Professor Cook
- Assignment 1
-
- Implement Node and LinkedList Classes
- with some basic functions
- Node class will hand Print() and Contains() methods
- via recursion 
-
-========================================================================= */
-
-
-
 class LinkedList
 {
     public Node head;
@@ -39,9 +23,7 @@ class LinkedList
     * reassign the head to the newly created node
     */
     public void AddHead(Entry value)
-    {      
-        //Entry item = new Entry(value);
-
+    {
         Node addNode = new Node(value); // create a new node
 
         if(head == null) // if true, we know that the LL is empty
